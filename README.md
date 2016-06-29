@@ -1,2 +1,2 @@
 # CodingInterviewCode
-Coding interview coce
+Coding interview code
