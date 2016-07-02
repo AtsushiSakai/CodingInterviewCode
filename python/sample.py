@@ -13,6 +13,7 @@ def SearchOnONN(target,datalist):
             if (data1+data2) == target:
                 print((data1,data2,target))
                 return(data1)
+    raise ValueNotFoundException('ValueNotFoundException')
 
 def SearchOnONlogN(target,datalist):
     print("SearchOnONLogN")
@@ -30,6 +31,8 @@ def SearchOnONlogN(target,datalist):
         else:
             print((datalist[i],datalist[j],target))
             return (datalist[i])
+    raise ValueNotFoundException('ValueNotFoundException')
+
 
 def SearchOnON(target,datalist):
     print("SearchOnON")
@@ -42,6 +45,7 @@ def SearchOnON(target,datalist):
             return (data)
         else:
             hashset[data]=data
+    raise ValueNotFoundException('ValueNotFoundException')
 
 if __name__ == '__main__':
     target=70
